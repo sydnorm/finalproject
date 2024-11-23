@@ -62,4 +62,104 @@ img {
 }
 
 
+/*stuff for forms */
+form {
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #d499ce;
+}
 
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  font-size: 16px;
+  height: auto;
+  padding: 15px;
+  width: 100%;
+  background-color: #e60cac;
+  color: #efdaf6;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+  caret-color: purple;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: pink;
+}
+
+label:required {
+  color: red;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+  background: pink;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  color: #ff00ae;
+  background-color: pink;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 50%;
+}
+
+button:hover,
+button:focus {
+  background-color: pink;
+  color: black;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #2b0047;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+}

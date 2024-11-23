@@ -11,3 +11,48 @@
     <header>
         <h1>liv simple fitness</h1>
     </header>
+
+    <form action="/" method="post">
+        <h1>let's connect!</h1>
+        <fieldset>
+        <legend>about you</legend>
+      
+        <label for="name">Name</label>
+      
+        <input type="text" id="name" name="name" placeholder="john doe" value="" required>
+      
+         <label for="email">Email</label>
+      
+        <input type="email" id="email" name="user_email" placeholder="johndoe@email.com" value="" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>let's chat</legend>
+          <label>what services are you interested in (select all that apply)</label>
+          <input type="checkbox" id="veggies" value="eat_veggies" name="veggies"><label class="light" for="veggies">personal training</label><br>
+          <input type="checkbox" id="fruits" value="eat_fruits" name="fruits"><label class="light" for="fruits">fitness plans</label><br>
+          <input type="checkbox" id="carbs" value="carbs" name="carbs"><label class="light" for="carbs">nutrition plans</label><br>
+    
+          <label for="fav_meal">favorite meal</label>
+          <select id="fav_meal" name="fav_meal">
+            <optgroup label="favortie_meal">
+              <option value="breakfast">breakfast</option>
+              <option value="lunch">lunch</option>
+              <option value="dinner">dinner</option>
+            </optgroup>
+            
+        <label for="bio">tell me about your fav food</label>
+        <textarea id="bio" name="user_bio" placeholder="stomach growling"></textarea>
+      
+      
+          </select>
+      
+ 
+          <br>
+      
+        </fieldset>
+      
+        <button type="submit">Submit</button>
+      
+      </form>
+</body>
