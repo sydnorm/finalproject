@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liv Simple Fitness</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+
 </head>
 <body>
 
@@ -15,44 +17,41 @@
     <form action="/" method="post">
         <h1>let's connect!</h1>
         <fieldset>
-        <legend>about you</legend>
+        <legend>info about you</legend>
       
         <label for="name">Name</label>
       
         <input type="text" id="name" name="name" placeholder="john doe" value="" required>
       
-         <label for="email">Email</label>
+        <label for="email">Email</label>
       
         <input type="email" id="email" name="user_email" placeholder="johndoe@email.com" value="" required>
         </fieldset>
 
         <fieldset>
-          <legend>let's chat</legend>
+          <legend>title of second area</legend>
           <label>what services are you interested in (select all that apply)</label>
-          <input type="checkbox" id="veggies" value="eat_veggies" name="veggies"><label class="light" for="veggies">personal training</label><br>
-          <input type="checkbox" id="fruits" value="eat_fruits" name="fruits"><label class="light" for="fruits">fitness plans</label><br>
-          <input type="checkbox" id="carbs" value="carbs" name="carbs"><label class="light" for="carbs">nutrition plans</label><br>
+          <input type="checkbox" id="training" value="training" name="training"><label class="light" for="training">personal training</label><br>
+          <input type="checkbox" id="fitness" value="fitness" name="fitness"><label class="light" for="fitness">fitness plans</label><br>
+          <input type="checkbox" id="nutrtoin" value="nutrtoin" name="nutrtoin"><label class="light" for="nutrtoin">nutrition plans</label><br>
     
-          <label for="fav_meal">favorite meal</label>
+          <br>
+          <label for="another_option">another option of dropdown</label>
           <select id="fav_meal" name="fav_meal">
             <optgroup label="favortie_meal">
               <option value="breakfast">breakfast</option>
               <option value="lunch">lunch</option>
               <option value="dinner">dinner</option>
             </optgroup>
-            
-        <label for="bio">tell me about your fav food</label>
-        <textarea id="bio" name="user_bio" placeholder="stomach growling"></textarea>
-      
-      
           </select>
-      
- 
-          <br>
-      
+
+          <label for="bio">leave any other notes for me!</label>
+          <textarea id="bio" name="user_bio" placeholder="type here"></textarea>    
         </fieldset>
       
-        <button type="submit">Submit</button>
+        <div class=button-container>
+        <button type="submit">submit</button>
+        </div>
       
       </form>
 </body>
