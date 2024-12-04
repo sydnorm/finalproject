@@ -1,0 +1,74 @@
+/*  color 
+#3D518C
+#5FA8D3
+#CAE9FF
+#D5ACA9
+#C6ECAE
+*/
+
+.bio {
+    background-color: #CAE9FF; 
+    padding: 20px;
+    margin: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio h1 {
+    font-size: 2em;
+    color: #3D518C; 
+    margin-bottom: 10px;
+}
+
+img {
+    margin: 20px;
+    margin-bottom: 0;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #5FA8D3;
+    border: none;
+    color: #CAE9FF;
+    border-radius: 0.3rem;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 80%;
+    padding: 10px;
+}
+
+button:hover,
+button:focus {
+    background-color: #3D518C;
+    color: #CAE9FF;
+}
+
+
+.photo-button {
+    background-image: url('images/image.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire button */
+    background-position: center; /* Centers the image */
+    border: none; /* Removes default border */
+    border-radius: 8px; /* Optional: rounded corners */
+    color: white; /* Text color */
+    font-size: 16px; /* Text size */
+    padding: 10px 20px; /* Space inside the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth animations */
+}
+
+.photo-button:hover {
+    transform: scale(1.05); /* Slightly enlarges button */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Darkens shadow */
+}
+
+.photo-button:focus {
+    outline: 2px solid #fff; /* Adds focus outline for accessibility */
+    outline-offset: 4px;
+}
