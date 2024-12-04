@@ -6,19 +6,24 @@
 #C6ECAE
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(222, 242, 255); 
     color: #3D518C;
     line-height: 1.6;
-}s
+}
 
 p {
     font-size: 1em;
 }
 
 header {
+    width: 100%;
     background-color: #CAE9FF; 
     padding: 20px;
     text-align: center;
