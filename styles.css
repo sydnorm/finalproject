@@ -5,6 +5,7 @@
 #D5ACA9
 #C6ECAE
 */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 * {
     box-sizing: border-box;
@@ -16,6 +17,7 @@ body {
     background-color: rgb(222, 242, 255); 
     color: #3D518C;
     line-height: 1.6;
+    font-family: "Archivo Black", sans-serif;
 }
 
 p {
@@ -34,7 +36,7 @@ header {
 header h1 {
     text-transform: uppercase;
     justify-content: start;
-
+    font-size: 2rem;
 }
 
 h1 {
@@ -69,4 +71,10 @@ img {
     margin-bottom: 10px;
 }
 
-
+footer {
+    width: 100%;
+    background-color: #CAE9FF; 
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
