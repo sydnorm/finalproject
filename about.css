@@ -19,7 +19,6 @@ p {
     border: none; 
     border-radius: 8px; 
     color: #3D518C;
-    text-decoration: bold;
     font-size: 18px; 
     padding: 10px 20px;
     padding-top: 3rem;
@@ -29,13 +28,8 @@ p {
     margin: 1.5rem; 
 }
 
-.box {
-    background-color: #CAE9FF; 
-    padding: 20px;
-    margin: 20px;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+.box.desc p {
+    font-size: 1em;
 }
 
 .box h1 {
@@ -60,19 +54,11 @@ img {
     border: none; 
     border-radius: 8px; 
     color: #3D518C;
-    text-decoration: bold;
     text-align: center;
     padding: 10px 20px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.2s, box-shadow 0.2s; 
     margin: 1.5rem; 
 }
 
-.cert-button:hover, .cert-button:focus {
-    transform: scale(1.05); 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
-}
 
 .cert-button.one {
     background-image: url('images/test.jpg'); 
@@ -86,30 +72,31 @@ img {
     background-image: url('images/test.jpg'); 
 }
 
-.cert-button.four {
-    background-image: url('images/test.jpg'); 
-}
 
-.experience-box {
+.experience {
     display: flex;
+    align-items: stretch;
 }
 
-.experience-box img {
+.experience img {
     width: 40%;
-    height: 50%;
-    margin: 1rem;
+    object-fit: cover;
+    height: auto;
+    max-height: 100%;
 }
 
 .experience-words {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex: 1;
 }
 
-.experience-box p {
+.experience p {
     font-size: 12px;
 }
 
-.experience-box h2 {
+.experience h2 {
     font-size: 1rem;
     margin-bottom: 0;
 }
@@ -140,7 +127,6 @@ img {
         border: none; 
         border-radius: 8px; 
         color: #3D518C;
-        text-decoration: bold;
         font-size: 18px; 
         padding: 10px 20px;
         padding-top: 3rem;
@@ -170,4 +156,21 @@ img {
     footer {
         grid-area: footer;
     }
+
+    .certificates {
+        display: flex;
+    }
+
+    .experiences {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+    
+    .experience {
+        flex: 1 1 calc(50% - 20px); 
+        box-sizing: border-box; 
+        max-width: calc(50%); 
+    }
+
 }
