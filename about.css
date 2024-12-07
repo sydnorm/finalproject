@@ -1,0 +1,173 @@
+/*  color 
+#3D518C
+#5FA8D3
+#CAE9FF
+#D5ACA9
+#C6ECAE
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+p {
+    font-size: 13px;
+}
+
+.quote-img {
+    background-image: url('images/test.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    border: none; 
+    border-radius: 8px; 
+    color: #3D518C;
+    text-decoration: bold;
+    font-size: 18px; 
+    padding: 10px 20px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    margin: 1.5rem; 
+}
+
+.box {
+    background-color: #CAE9FF; 
+    padding: 20px;
+    margin: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box h1 {
+    font-size: 1.8em;
+    color: #3D518C; 
+    margin-bottom: 10px;
+}
+
+img {
+    margin: 20px;
+    margin-bottom: 0;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cert-button {
+    background-image: url('images/test.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    border: none; 
+    border-radius: 8px; 
+    color: #3D518C;
+    text-decoration: bold;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+    margin: 1.5rem; 
+}
+
+.cert-button:hover, .cert-button:focus {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.cert-button.one {
+    background-image: url('images/test.jpg'); 
+}
+
+.cert-button.two {
+    background-image: url('images/test.jpg'); 
+}
+
+.cert-button.three {
+    background-image: url('images/test.jpg'); 
+}
+
+.cert-button.four {
+    background-image: url('images/test.jpg'); 
+}
+
+.experience-box {
+    display: flex;
+}
+
+.experience-box img {
+    width: 40%;
+    height: 50%;
+    margin: 1rem;
+}
+
+.experience-words {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-box p {
+    font-size: 12px;
+}
+
+.experience-box h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "quote quote"
+            "description image"
+            "certificates certificates"
+            "experience experience"
+            "footer footer";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    .quote-img {
+        background-image: url('images/test.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        border: none; 
+        border-radius: 8px; 
+        color: #3D518C;
+        text-decoration: bold;
+        font-size: 18px; 
+        padding: 10px 20px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+        margin: 1.5rem; 
+        grid-area: quote;
+    }
+
+    .box.desc {
+        grid-area: description;
+    }
+    
+    .profile-img {
+        grid-area: image;
+    }
+
+    .box.cert {
+        grid-area: certificates;
+    }
+
+    .box.exp {
+        grid-area: experience;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
