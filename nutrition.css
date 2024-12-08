@@ -103,17 +103,7 @@ img {
 }
 
 
-.cert-button.one {
-    background-image: url('images/test.jpg'); 
-}
 
-.cert-button.two {
-    background-image: url('images/test.jpg'); 
-}
-
-.cert-button.three {
-   
-}
 
 
 .mealprep {
@@ -153,7 +143,7 @@ img {
             "l1 r1"
             "l2 r1"
             "l3 r1"
-            "experience experience"
+            "footer footer"
             "footer footer";
         grid-template-columns: 2fr 1fr;
         grid-template-rows: repeat(6, auto);

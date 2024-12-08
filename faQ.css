@@ -14,31 +14,31 @@
 /* Grid container */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* Single column layout */
-    grid-template-rows: 1fr 1fr; /* Two rows: one for the title, one for the dropdown */
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full width */
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    height: 100vh; 
+    width: 100vw; 
 }
 
 .inline{
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
 }
-/* Title styling */
+
 .title {
-    grid-row: 1; /* Place in the first row */
+    grid-row: 1;
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
+    justify-content: center; 
+    align-items: center;
     font-size: large;
     padding: 10px;
-    background-color: #f0f0f0; /* Optional background for contrast */
+    background-color: #f0f0f0; 
 }
 
 .Question-Answer-Pair{
     display: block;
-    background-color: lightgrey;
     border-radius: 5px;
     padding:10px;
 }
@@ -54,4 +54,12 @@
 }
 .Q{
     min-height: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .inline {
+        padding-top: 120px;
+    }
+   
 }
