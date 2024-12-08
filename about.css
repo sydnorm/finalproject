@@ -13,6 +13,7 @@ p {
 }
 
 .quote-img {
+    background-image: url('images/test.jpg'); 
     background-size: cover; 
     background-position: center; 
     border: none; 
@@ -28,7 +29,7 @@ p {
 }
 
 .box.desc p {
-    font-size: 1em;
+    font-size: 0.7em;
 }
 
 .box h1 {

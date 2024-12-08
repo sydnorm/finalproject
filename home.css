@@ -17,9 +17,21 @@
 }
 
 .bio h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: #3D518C; 
     margin-bottom: 10px;
+    margin: 0;
+}
+
+.bio h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #5FA8D3; 
+
+}
+
+.bio p {
+    font-size: 0.7em;
 }
 
 img {

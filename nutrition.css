@@ -191,7 +191,7 @@ img {
         grid-area: quote;
     }
 
-    .box.desc {
+    .home {
         grid-area: description;
     }
     
