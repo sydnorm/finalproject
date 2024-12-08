@@ -82,6 +82,7 @@ p {
     font-size: 16px;
     font-weight: bold;
   }
+
 .box.desc p {
     font-size: 1em;
 }
@@ -101,18 +102,6 @@ img {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cert-button {
-    background-image: url('images/test.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    border: none; 
-    border-radius: 8px; 
-    color: #3D518C;
-    text-align: center;
-    padding: 10px 20px;
-    margin: 1.5rem; 
-}
-
 
 .cert-button.one {
     background-image: url('images/test.jpg'); 
@@ -123,34 +112,34 @@ img {
 }
 
 .cert-button.three {
-    background-image: url('images/test.jpg'); 
+   
 }
 
 
-.experience {
+.mealprep {
     display: flex;
     align-items: stretch;
 }
 
-.experience img {
+.mealprep img {
     width: 40%;
     object-fit: cover;
     height: auto;
     max-height: 100%;
 }
 
-.experience-words {
+.mealprep-words {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
 }
 
-.experience p {
+.mealprep p {
     font-size: 12px;
 }
 
-.experience h2 {
+.mealprep h2 {
     font-size: 1rem;
     margin-bottom: 0;
 }
@@ -161,9 +150,9 @@ img {
         display: grid;
         grid-template-areas:
             "header header"
-            "quote quote"
-            "description image"
-            "certificates certificates"
+            "l1 r1"
+            "l2 r1"
+            "l3 r1"
             "experience experience"
             "footer footer";
         grid-template-columns: 2fr 1fr;
@@ -192,39 +181,18 @@ img {
     }
 
     .home {
-        grid-area: description;
-    }
-    
-    .profile-img {
-        grid-area: image;
+        grid-area: header;
     }
 
     .box.cert {
-        grid-area: certificates;
+        grid-area: r1; 
     }
 
-    .box.exp {
-        grid-area: experience;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
-    .certificates {
-        display: flex;
-    }
-
-    .experiences {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; 
+    .items {
+        grid-area: l1;
     }
     
-    .experience {
-        flex: 1 1 calc(50% - 20px); 
-        box-sizing: border-box; 
-        max-width: calc(50%); 
+    .footer {
+        grid-area: footer;
     }
-
 }
