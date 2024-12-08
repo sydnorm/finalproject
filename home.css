@@ -61,7 +61,17 @@ img {
     color: #CAE9FF;
 }
 
+a{
+    text-decoration:none;
+}
 
+.photo-button a:hover{
+    color:white
+}
+
+.photo-button a:focus{
+    color:white
+}
 .photo-button {
     background-image: url('images/test.jpg'); 
     background-size: cover; 
@@ -98,6 +108,7 @@ img {
     background-image: url('images/faq.png'); 
 }
 
+  
 @media screen and (min-width: 768px) {    
     body {
         display: grid;
@@ -120,11 +131,13 @@ img {
         grid-area: image;
         max-width: 100%;
         align-self: center;
+        margin-top:7rem;
     }
 
     .bio {
         grid-area: bio;
         font-size:1.5rem;
+        margin-top:7rem;
     }
 
     .photo-button.one {

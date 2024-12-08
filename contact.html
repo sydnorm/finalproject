@@ -6,12 +6,25 @@
     <title>Liv Simple Fitness</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/responsive-nav.js"></script>
 
 </head>
 <body>
 
     <header>
         <h1>liv simple fitness</h1>
+        <nav class="nav-collapse">      
+          <ul>
+          <li class="menu-item"><a href="index.html" data-scroll>home</a></li>
+          <li class="menu-item"><a href="qualifications.html" data-scroll>about</a></li>
+          <li class="menu-item"><a href="services.html" data-scroll>services</a></li>
+          <li class="menu-item"><a href="nutrition.html" data-scroll>nutrition</a></li>
+          <li class="menu-item"><a href="faQ.html" data-scroll>faq</a></li>
+          <li class="menu-item"><a href="contact.html" data-scroll>contact</a></li>
+      
+      </ul>
+      </nav>
     </header>
 
     <form action="/" method="post">
@@ -34,16 +47,6 @@
           <input type="checkbox" id="training" value="training" name="training"><label class="light" for="training">personal training</label><br>
           <input type="checkbox" id="group" value="group" name="fitness"><label class="light" for="fitness">group personal training</label><br>
           <input type="checkbox" id="sports" value="sports" name="nutrtoin"><label class="light" for="nutrtoin">sports camps</label><br>
-    
-          <br>
-          <label for="another_option">another option of dropdown</label>
-          <select id="fav_meal" name="fav_meal">
-            <optgroup label="favortie_meal">
-              <option value="breakfast">breakfast</option>
-              <option value="lunch">lunch</option>
-              <option value="dinner">dinner</option>
-            </optgroup>
-          </select>
 
           <label for="bio">leave any other notes for me and/or questions</label>
           <textarea id="bio" name="user_bio" placeholder="type here"></textarea>    
@@ -56,5 +59,9 @@
       </form>
 
       <footer>@livsimplefitenss</footer>
+
+      <script src="js/fastclick.js"></script>
+      <script src="js/scroll.js"></script>
+      <script src="js/fixed-responsive-nav.js"></script>
 
 </body>
