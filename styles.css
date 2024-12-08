@@ -18,6 +18,7 @@ body {
     color: #3D518C;
     line-height: 1.6;
     font-family: "Archivo Black", sans-serif;
+    padding-top: 60px;
 }
 
 p {
@@ -30,12 +31,15 @@ header {
     padding: 20px;
     text-align: center;
     display: flex;
+    width: 100%;
+    align-items: center;
 }
 
 header h1 {
     text-transform: uppercase;
     justify-content: start;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    justify-content: flex-start;
 }
 
 h1 {
