@@ -1,0 +1,230 @@
+/*  color 
+#3D518C
+#5FA8D3
+#CAE9FF
+#D5ACA9
+#C6ECAE
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+p {
+    font-size: 13px;
+}
+
+.quote-img {
+    background-image: url('images/test.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    border: none; 
+    border-radius: 8px; 
+    color: #3D518C;
+    font-size: 18px; 
+    padding: 10px 20px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    margin: 1.5rem; 
+}
+
+.home {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color:#3D518C;
+    padding: 5px;
+    border-radius: 5px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(3, 1fr); 
+    height: 100vh; 
+    width: 100vw;
+  }
+  
+  .top-text{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+  }
+  .left-column{
+    grid-row: span 3;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #f0f0f0; 
+  }
+  
+  .left-column {
+    grid-column: 1; 
+  }
+  
+  
+  .center-row {
+    display: grid;
+    grid-column: 2; 
+    grid-template-rows: 1fr 1fr 1fr; 
+   
+  }
+  
+  .center-item {
+    background-color: #007BFF; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+.box.desc p {
+    font-size: 1em;
+}
+
+.box h1 {
+    font-size: 1.8em;
+    color: #3D518C; 
+    margin-bottom: 10px;
+}
+
+img {
+    margin: 20px;
+    margin-bottom: 0;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cert-button {
+    background-image: url('images/test.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    border: none; 
+    border-radius: 8px; 
+    color: #3D518C;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 1.5rem; 
+}
+
+
+.cert-button.one {
+    background-image: url('images/test.jpg'); 
+}
+
+.cert-button.two {
+    background-image: url('images/test.jpg'); 
+}
+
+.cert-button.three {
+    background-image: url('images/test.jpg'); 
+}
+
+
+.experience {
+    display: flex;
+    align-items: stretch;
+}
+
+.experience img {
+    width: 40%;
+    object-fit: cover;
+    height: auto;
+    max-height: 100%;
+}
+
+.experience-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.experience p {
+    font-size: 12px;
+}
+
+.experience h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "quote quote"
+            "description image"
+            "certificates certificates"
+            "experience experience"
+            "footer footer";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    .quote-img {
+        background-image: url('images/test.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        border: none; 
+        border-radius: 8px; 
+        color: #3D518C;
+        font-size: 18px; 
+        padding: 10px 20px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+        margin: 1.5rem; 
+        grid-area: quote;
+    }
+
+    .box.desc {
+        grid-area: description;
+    }
+    
+    .profile-img {
+        grid-area: image;
+    }
+
+    .box.cert {
+        grid-area: certificates;
+    }
+
+    .box.exp {
+        grid-area: experience;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .certificates {
+        display: flex;
+    }
+
+    .experiences {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+    
+    .experience {
+        flex: 1 1 calc(50% - 20px); 
+        box-sizing: border-box; 
+        max-width: calc(50%); 
+    }
+
+}
