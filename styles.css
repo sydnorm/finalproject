@@ -21,6 +21,15 @@ body {
     padding-top: 60px;
 }
 
+
+.nav-collapse .menu-item a:hover{
+    color:white
+}
+
+.nav-collapse .menu-item a:focus{
+    color:white
+}
+
 p {
     font-size: 1em;
 }

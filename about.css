@@ -25,7 +25,8 @@ p {
     padding-bottom: 3rem;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    margin: 1.5rem; 
+    margin:1.5rem;
+    margin: 7rem;
 }
 
 .box.desc p {
